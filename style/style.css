@@ -1,0 +1,142 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: aqua;
+    align-items: center;
+    padding: 15px;
+}
+.navigations {
+    display: flex;
+    justify-content: center;
+}
+.navigations ul {
+    display: flex;
+}
+.nav-a {
+    padding-left: 20px;
+}
+#input-box {
+    margin: 50px;
+}
+i {
+    margin: 10px;
+}
+.burger-bar {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid blueviolet;
+    cursor: pointer;
+    display: none;
+}
+.line {
+    width: 90%;
+    height: 2px;
+    background-color: blueviolet;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all 0.3s linear;
+}
+.line1 {
+    top: 30%;
+}
+.line3 {
+    top: 70%;
+}
+.activebar .line1 {
+    top: 50%;
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+.activebar .line3 {
+    top: 50%;
+    transform: translate(-50%,-50%) rotate(-45deg);
+}
+.activebar .line2 {
+    display: none;
+}
+.ul-flex {
+    display: flex;
+    justify-content: left;
+}
+
+
+
+
+/*footer*/
+.footer-bg {
+    background-color: #121212;
+    padding: 89px 0 114px 0;
+}
+.footer-bg a {
+    color: #5863F8;
+}
+.footer-flex {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.footer-block01 {
+    width: 260px;
+}
+.footer-block01 h2 {
+    color: white;
+}
+.footer-block01 p {
+    color: white;
+    margin-top: 22px;
+    margin-bottom: 20px;
+}
+
+.footer-social-icons {
+    display: flex;
+}
+.size-social {
+    width: 35px;
+    height: 35px;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.soc-contact-fb {
+    background-color: #3B5998; 
+}
+.soc-contact-twitter {
+    background-color: #55ACEE;
+    margin:0 15px;
+}
+.soc-contact-google {
+    background-color: #DC4E41;
+}
+.footer-block h2 {
+    font-family: 'Poppins';
+    font-size: 18px;
+    color: white;
+}
+.footer-block li {
+    font-family: 'Poppins';
+    font-size: 14px;
+    padding-top: 11px;
+}
+.footer-block span {
+    font-family: 'Poppins';
+    font-size: 14px;
+    padding-top: 11px;
+    color: white;
+}
+.contact-icon {
+    color: #5863F8;
+    margin-right: 14px;
+}
+.footer-span {
+    font-family: 'Poppins';
+    font-size: 14px;
+    margin-top: 54px;
+    margin-left: 139px;
+    color: white;
+}

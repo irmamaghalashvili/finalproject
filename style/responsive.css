@@ -1,0 +1,20 @@
+@media (max-width: 768px) {
+    .burger-bar {
+        display: block;
+    }
+    .navigations {
+        display: none;
+    }
+    .header {
+        flex-direction: column;
+    }
+    ul {
+        flex-direction: column;   
+    }
+    li {
+        margin-top: 15px;
+    }
+    .navigations.activeNav {
+        display: block;
+    }
+}
