@@ -5,13 +5,16 @@
 .header {
     display: flex;
     justify-content: space-between;
-    background-color: aqua;
+    background-color: beige;
     align-items: center;
     padding: 15px;
 }
 .navigations {
     display: flex;
     justify-content: center;
+}
+.nav-a:hover {
+    color: gray;
 }
 .navigations ul {
     display: flex;
@@ -31,14 +34,14 @@ i {
     right: 10px;
     width: 30px;
     height: 30px;
-    border: 1px solid blueviolet;
+    border: 1px solid goldenrod;
     cursor: pointer;
     display: none;
 }
 .line {
     width: 90%;
     height: 2px;
-    background-color: blueviolet;
+    background-color: goldenrod;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -66,17 +69,37 @@ i {
     display: flex;
     justify-content: left;
 }
-
-
-
+/* search */
+label {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+input, label {
+    margin: .4rem 0;
+    border-color: darkblue;
+    border-radius: 10px;
+}
+.input:focus {
+    outline: none;
+    color: darkblue;
+}
+.input::placeholder {
+    color: goldenrod;
+}
+.btn {
+    border-radius: 10px;
+    color: darkblue;
+    border: none;
+    background-color: beige;
+}
 
 /*footer*/
 .footer-bg {
-    background-color: #121212;
+    background-color: beige;
     padding: 89px 0 114px 0;
 }
 .footer-bg a {
-    color: #5863F8;
+    color: goldenrod;
 }
 .footer-flex {
     display: flex;
@@ -86,11 +109,9 @@ i {
 .footer-block01 {
     width: 260px;
 }
-.footer-block01 h2 {
-    color: white;
-}
+
 .footer-block01 p {
-    color: white;
+    color: darkblue;
     margin-top: 22px;
     margin-bottom: 20px;
 }
@@ -120,7 +141,7 @@ i {
 .footer-block h2 {
     font-family: 'Poppins';
     font-size: 18px;
-    color: white;
+    color: darkblue;
 }
 .footer-block li {
     font-family: 'Poppins';
@@ -131,7 +152,7 @@ i {
     font-family: 'Poppins';
     font-size: 14px;
     padding-top: 11px;
-    color: white;
+    color: darkblue;
 }
 .contact-icon {
     color: #5863F8;
@@ -142,5 +163,5 @@ i {
     font-size: 14px;
     margin-top: 54px;
     margin-left: 139px;
-    color: white;
+    color: darkblue;
 }
