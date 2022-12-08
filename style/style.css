@@ -1,9 +1,16 @@
+.h1 {
+  font-size: 30px;
+  align-items: center;
+  margin:50px;
+  text-align: center;
+}
 .logo {
-    width: 20px;
+    width: 40px;
     border-radius: 50%;
 }
 .header {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     background-color: beige;
     align-items: center;
@@ -12,6 +19,7 @@
 .navigations {
     display: flex;
     justify-content: center;
+    margin-bottom: 30px;
 }
 .nav-a:hover {
     color: gray;
@@ -30,18 +38,18 @@ i {
 }
 .burger-bar {
     position: absolute;
-    top: 0px;
-    right: 10px;
+    top: 130px;
+    right: 50%;
     width: 30px;
     height: 30px;
-    border: 1px solid goldenrod;
+    border: 1px solid beige;
     cursor: pointer;
     display: none;
 }
 .line {
     width: 90%;
     height: 2px;
-    background-color: goldenrod;
+    background-color: darkblue;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -69,6 +77,40 @@ i {
     display: flex;
     justify-content: left;
 }
+.about {
+  background-color: Wheat;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.about-box {
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+}
+.about-box h2 {
+  font-size: 20px;
+  margin: 10px;
+}
+.front-image-div {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  max-width: 400px;
+  background-color: darkblue;
+  border-radius: 20%;
+}
+.front-image-div img {
+  width: 90%;
+  border-radius: 50%;
+
+}
 /* search */
 label {
     display: block;
@@ -78,6 +120,10 @@ input, label {
     margin: .4rem 0;
     border-color: darkblue;
     border-radius: 10px;
+    height: 40px;
+}
+input {
+  background-color: Cornsilk;
 }
 .input:focus {
     outline: none;
@@ -86,11 +132,12 @@ input, label {
 .input::placeholder {
     color: goldenrod;
 }
-.btn {
-    border-radius: 10px;
-    color: darkblue;
-    border: none;
-    background-color: beige;
+.search-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 /* log in */
 .sign-in-up {
@@ -162,12 +209,12 @@ input[type=text], input[type=password] {
     margin: 8px 0;
     border: none;
     cursor: pointer;
-    width: 100%;
+    width: 120px;
     border-radius: 10px;
     opacity: 0.9;
   }
   button:hover {
-    opacity:1;
+    opacity:2;
   }
   .cancelbtn {
     padding: 14px 20px;
@@ -227,6 +274,38 @@ input[type=text], input[type=password] {
        width: 100%;
     }
   }
+  .search-sign {
+    background-color: DarkGoldenrod;
+  }
+.work-water {
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: darkblue;
+}
+.work-water img {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 50px;
+  margin: 20px;
+}
+.work-water-div {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.work-water-div p, h2 {
+  color: goldenrod;
+  max-width: 300px;
+  width: 100%;
+  margin: 10px;
+}
 
 /*footer*/
 .footer-bg {
@@ -272,6 +351,11 @@ input[type=text], input[type=password] {
 }
 .soc-contact-google {
     background-color: #DC4E41;
+    
+}
+.soc-contact-tiktok {
+  background-color: black;
+  margin:0 15px;
 }
 .footer-block h2 {
     font-family: 'Poppins';
