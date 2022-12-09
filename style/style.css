@@ -378,6 +378,7 @@ input[type=text], input[type=password] {
 }
 .coock-div-gif {
   max-width: 300px;
+  width: 100%;
 }
 .coock-gif {
   width: 100%;
