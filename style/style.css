@@ -1,18 +1,24 @@
+h2, h3, h4 h5, h6 {
+  text-align: center;
+  margin: 0 30px;
+  font-size: 20px;
+  color: rgb(49, 48, 48);
+}
+a {
+  color: rgb(180, 180, 180);
+}
+/* header */
 .h1 {
   font-size: 30px;
   align-items: center;
   margin:50px;
   text-align: center;
 }
-.logo {
-    width: 40px;
-    border-radius: 50%;
-}
 .header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: beige;
+    background-color: #e9e8e6;
     align-items: center;
     padding: 15px;
 }
@@ -42,14 +48,14 @@ i {
     right: 50%;
     width: 30px;
     height: 30px;
-    border: 1px solid beige;
+    border: 1px solid #e9e8e6;
     cursor: pointer;
     display: none;
 }
 .line {
     width: 90%;
     height: 2px;
-    background-color: darkblue;
+    background-color: SlateGray;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -78,7 +84,6 @@ i {
     justify-content: left;
 }
 .about {
-  background-color: Wheat;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -94,22 +99,17 @@ i {
   align-items: center;
   text-align: center;
 }
-.about-box h2 {
-  font-size: 20px;
-  margin: 10px;
-}
 .front-image-div {
   margin: 20px;
   display: flex;
   justify-content: center;
   max-width: 400px;
-  background-color: darkblue;
+  background-color: Gainsboro;
   border-radius: 20%;
 }
 .front-image-div img {
   width: 90%;
   border-radius: 50%;
-
 }
 /* search */
 label {
@@ -118,19 +118,16 @@ label {
 }
 input, label {
     margin: .4rem 0;
-    border-color: darkblue;
+    border-color: Gainsboro;
     border-radius: 10px;
     height: 40px;
 }
-input {
-  background-color: Cornsilk;
-}
 .input:focus {
     outline: none;
-    color: darkblue;
+    color: Gainsboro;
 }
 .input::placeholder {
-    color: goldenrod;
+    color: Silver;
 }
 .search-box {
   display: flex;
@@ -203,8 +200,7 @@ input[type=text], input[type=password] {
   
   /* Set a style for all buttons */
   button {
-    background-color: darkblue;
-    color: goldenrod;
+    color: SlateGray;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
@@ -226,7 +222,7 @@ input[type=text], input[type=password] {
   }
   .container {
     padding: 16px;
-    background-color: Wheat;
+    background-color: Silver;
   }
   .modal {
     display: none;
@@ -237,7 +233,6 @@ input[type=text], input[type=password] {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: beige;
     padding-top: 50px;
   }
   .modal-content {
@@ -274,17 +269,75 @@ input[type=text], input[type=password] {
        width: 100%;
     }
   }
-  .search-sign {
-    background-color: Goldenrod;
-  }
+ 
+/* about */
+.about-div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.front-div {
+  max-width: 200px;
+  width: 100%;
+}
+.front-div img {
+  width: 100%;
+}
+.skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+.skill-div {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 450px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.skill-div-line {
+  height: 10px;
+  width: 450px;
+  background-color: #888;
+}
+.skill-div-HTML  {
+  height: 100%;
+  width: 80%;
+  background-color: #34b7a7;
+  transition: all 0.9s ease 0s;
+}
+.skill-div-CSS {
+  height: 100%;
+  width: 70%;
+  background-color: #34b7a7;
+  transition: all 0.9s ease 0s;
+}
+.skill-div-JAVA {
+  height: 100%;
+  width: 10%;
+  background-color: #34b7a7;
+  transition: all 0.9s ease 0s;
+}
+.skill-div-PHOTOSHOP {
+  height: 100%;
+  width: 20%;
+  background-color: #34b7a7;
+  transition: all 0.9s ease 0s;
+}
+
+/* work */
 .work {
+  background-color: #fbfbfb;
   display: flex;
   flex-direction: row;
   align-content: space-around;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  background-color: darkblue;
 }
 .work img {
   max-width: 350px;
@@ -300,29 +353,10 @@ input[type=text], input[type=password] {
   align-items: center;
   text-align: center;
 }
-.work-water-div p, h2 {
-  color: goldenrod;
-  max-width: 400px;
-  width: 100%;
-  margin: 10px;
-}
-.work-h2 {
-  font-size: 20px;
-}
-.jobicon {
-  color: goldenrod;
-}
-.work-credo {
-  margin-left: 20px;
-}
-.work-credo p, h2 {
-  color: goldenrod;
-  max-width: 400px;
-  width: 100%;
-  margin: 10px;
-}
+
 .edu-section {
-  background-color: goldenrod;
+ 
+  margin-top: 50px;
   text-align: center;
 }
 .edu {
@@ -341,12 +375,6 @@ input[type=text], input[type=password] {
   flex-wrap: wrap;
   margin: 10px;
 }
-.uni h3, h4 {
-  font-size: 20px;
-}
-.academy h3, h4 {
-  font-size: 20px;
-}
 .edu-gif {
   max-width: 250px;
   width: 100%;
@@ -355,6 +383,12 @@ input[type=text], input[type=password] {
   width: 100%;
 }
 /* favorite books */
+.book-section {
+  background-color: #fbfbfb;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-bottom: 40px;
+}
 .fav-books {
   display: flex;
   flex-direction: row;
@@ -375,40 +409,23 @@ input[type=text], input[type=password] {
 .book-div-img {
   max-width: 150px;
   width: 100%;
-  background-color: rgb(9, 9, 69);
 }
 .book-div-img img {
   width: 90%;
 }
-.book-div h4 {
-  color: goldenrod;
-  font-size: 15px;
-}
-.book-div p {
-  color: goldenrod;
-  font-size: 10px;
-}
 
 
 /* Hobbies */
-.read-h3 {
-  color: goldenrod;
-  font-size: 20px;
-  text-align: center;
-}
-.read-h3 i {
-  color: goldenrod;
-}
+
 .read-div-gif {
   max-width: 300px;
 }
 .read-gif {
   width: 100%;
 }
-.coock-h3 {
-  color: darkblue;
-  font-size: 20px;
-  text-align: center;
+.coock-section {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 .coock-div-gif {
   max-width: 300px;
@@ -432,8 +449,8 @@ input[type=text], input[type=password] {
   width: 80px;
   height: 60px;
   font-size: 30px;
-  color: darkblue;
-  background-color: goldenrod;
+  color: darkgray;
+  background-color: gray;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -490,28 +507,16 @@ input[type=text], input[type=password] {
 
 /*footer*/
 .footer-bg {
-    background-color: beige;
+    background-color: #e9e8e6;
     padding: 89px 0 114px 0;
 }
-.footer-bg a {
-    color: goldenrod;
-}
+
 .footer-flex {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
 }
-.footer-block01 {
-    width: 260px;
-}
-
-.footer-block01 p {
-    color: darkblue;
-    margin-top: 22px;
-    margin-bottom: 20px;
-}
-
 .footer-social-icons {
     display: flex;
 }
@@ -539,30 +544,10 @@ input[type=text], input[type=password] {
   background-color: black;
   margin:0 15px;
 }
-.footer-block h2 {
-    font-family: 'Poppins';
-    font-size: 18px;
-    color: darkblue;
-}
-.footer-block li {
-    font-family: 'Poppins';
-    font-size: 14px;
-    padding-top: 11px;
-}
-.footer-block span {
-    font-family: 'Poppins';
-    font-size: 14px;
-    padding-top: 11px;
-    color: darkblue;
-}
-.contact-icon {
-    color: #5863F8;
-    margin-right: 14px;
-}
+
 .footer-span {
     font-family: 'Poppins';
     font-size: 14px;
     margin-top: 54px;
     margin-left: 139px;
-    color: darkblue;
 }
