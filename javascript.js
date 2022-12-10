@@ -31,7 +31,7 @@ let data = [
   {
     id: 1,
     imageUrl: "images/coock-slider/1.jpg",
-    title: "cack with nuts",
+    title: "cake with nuts",
   },
   {
     id: 2,
@@ -41,7 +41,6 @@ let data = [
   {
     id: 3,
     imageUrl: "images/coock-slider/3.jpg",
-
     title: "Easter cake",
   },
   {
@@ -144,3 +143,38 @@ setInterval(() => {
 }, 5000);
 
 slider();
+
+
+// book slide
+let data2 = [
+  {
+    id: 11,
+    imageUrl: "images/books/MartinEden.jpg",
+    title: "Martin Eden",
+    title2: "Living in Oakland at the beginning of the 20th century, Martin Eden struggles to rise above his destitute, proletarian circumstances through an intense and passionate pursuit of self-education, hoping to achieve a place among the literary elite. His principal motivation is his love for Ruth Morse."
+  },
+  {
+    id: 22,
+    imageUrl: "images/books/buddenbrooks.jpg",
+    title: "Buddenbrooks",
+    title2: "Buddenbrooks is a 1901 novel by Thomas Mann, chronicling the decline of a wealthy north German merchant family over the course of four generations, incidentally portraying the manner of life and mores of the Hanseatic bourgeoisie in the years from 1835 to 1877."
+  },
+  {
+    id: 33,
+    imageUrl: "images/books/Vanity-Fair",
+    title: "Vanity Fair",
+    title2: "Vanity Fair is an English novel by William Makepeace Thackeray, which follows the lives of Becky Sharp and Amelia Sedley amid their friends and families during and after the Napoleonic Wars."
+  },
+  {
+    id: 44,
+    imageUrl: "images/books/book*thief.jpg",
+    title: "The Book Thief",
+    title2: "The Book Thief is a historical fiction novel by the Australian author Markus Zusak, and is his most popular book. Published in 2005, The Book Thief became an international bestseller and was translated into 63 languages and sold 16 million copies. It was adapted into the 2013 feature film, The Book Thief.",
+  },
+  {
+    id: 55,
+    imageUrl: "images/books/the-night-in-lisabon.jpg",
+    title: "The Night in Lisbon",
+    title2: "The Night in Lisbon is a novel by Erich Maria Remarque published in 1962. It revolves around the plight of two German refugees in the opening months of World War II. One of the refugees relates their story during the course of a single night in Lisbon in 1942.",
+  }
+]

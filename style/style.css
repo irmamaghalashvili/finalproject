@@ -354,6 +354,40 @@ input[type=text], input[type=password] {
 .gif {
   width: 100%;
 }
+/* favorite books */
+.fav-books {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.book-div {
+  max-width: 200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+.book-div-img {
+  max-width: 150px;
+  width: 100%;
+  background-color: rgb(9, 9, 69);
+}
+.book-div-img img {
+  width: 90%;
+}
+.book-div h4 {
+  color: goldenrod;
+  font-size: 15px;
+}
+.book-div p {
+  color: goldenrod;
+  font-size: 10px;
+}
 
 
 /* Hobbies */
