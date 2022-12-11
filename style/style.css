@@ -121,6 +121,7 @@ input, label {
     border-color: Gainsboro;
     border-radius: 10px;
     height: 40px;
+    width: 100%;
 }
 .input:focus {
     outline: none;
@@ -163,26 +164,9 @@ input[type=text], input[type=password] {
     animation: animatezoom 0.6s
   }
   
-  @-webkit-keyframes animatezoom {
-    from {-webkit-transform: scale(0)} 
-    to {-webkit-transform: scale(1)}
-  }
-    
-  @keyframes animatezoom {
-    from {transform: scale(0)} 
-    to {transform: scale(1)}
-  }
-  
+
   /* Change styles for span and cancel button on extra small screens */
-  @media screen and (max-width: 300px) {
-    span.psw {
-       display: block;
-       float: none;
-    }
-    .cancelbtn {
-       width: 100%;
-    }
-  }
+ 
 /* sing up */
 input[type=text], input[type=password] {
     width: 100%;
@@ -264,11 +248,7 @@ input[type=text], input[type=password] {
     clear: both;
     display: table;
   }
-  @media screen and (max-width: 300px) {
-    .cancelbtn, .signupbtn {
-       width: 100%;
-    }
-  }
+
  
 /* about */
 .about-div {
@@ -288,20 +268,21 @@ input[type=text], input[type=password] {
 .skills {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
 
 }
 .skill-div {
   margin-top: 20px;
   margin-bottom: 20px;
-  width: 450px;
+  width: 350px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 .skill-div-line {
   height: 10px;
-  width: 450px;
+  width: 350px;
   background-color: #888;
 }
 .skill-div-HTML  {
@@ -328,22 +309,41 @@ input[type=text], input[type=password] {
   background-color: #34b7a7;
   transition: all 0.9s ease 0s;
 }
+.cover-leter {
+  padding-top: 20px;
+  margin: 40px;
+  background-color: #fbfbfb;
+  text-align: center;
+}
 
 /* work */
 .work {
   background-color: #fbfbfb;
   display: flex;
   flex-direction: row;
-  align-content: space-around;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  justify-content:space-around;
 }
 .work img {
-  max-width: 350px;
+  max-width: 250px;
   width: 100%;
-  border-radius: 50px;
   margin: 20px;
+  --s: 15px;  /* size of the frame */
+  --b: 2px;   /* border thickness */
+  --c: darkgray;
+  
+  width: var(--w);
+  aspect-ratio: 1;
+  object-fit: cover;
+  padding: calc(2*var(--s));
+  --_g: var(--c) var(--b),#0000 0 calc(100% - var(--b)),var(--c) 0;
+  background:
+    linear-gradient(      var(--_g)) 50%/100% var(--_i,100%) no-repeat,
+    linear-gradient(90deg,var(--_g)) 50%/var(--_i,100%) 100% no-repeat;
+  outline: calc(var(--w)/2) solid #0009;
+  outline-offset: calc(var(--w)/-2 - 2*var(--s));
+  transition: .4s;
+  cursor: pointer;
 }
 .work-div {
   display: flex;
@@ -355,7 +355,6 @@ input[type=text], input[type=password] {
 }
 
 .edu-section {
- 
   margin-top: 50px;
   text-align: center;
 }
@@ -418,6 +417,9 @@ input[type=text], input[type=password] {
 /* Hobbies */
 
 .read-div-gif {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
   max-width: 300px;
 }
 .read-gif {
@@ -449,7 +451,7 @@ input[type=text], input[type=password] {
   width: 80px;
   height: 60px;
   font-size: 30px;
-  color: darkgray;
+  color: #34b7a7;
   background-color: gray;
   position: absolute;
   top: 50%;
@@ -493,7 +495,7 @@ input[type=text], input[type=password] {
   cursor: pointer;
     width: 20px;
     height: 20px;
-    background-color: gold;
+    background-color: #34b7a7;
     border-radius: 50%;
     margin: 10px;
     display: inline-block;
@@ -504,6 +506,57 @@ input[type=text], input[type=password] {
     background-color: lightgoldenrodyellow;
   }
 
+/* contact */
+.cont {
+  background-color: #a8a8a8;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.map {
+  max-width: 600px;
+  width: 100%;
+}
+
+.contact-h3 {
+  margin: 20px;
+  text-align: center;
+  color: #a8a8a8;
+}
+.cf {
+  max-width: 600px;
+  text-align: center;
+  margin: 20px auto;
+}
+.half {
+ float: left;
+ width: 48%;
+ margin-bottom: 1em;
+}
+.rightt { width: 50%; }
+
+.left {
+    margin-right: 2%; 
+}
+.textarea {
+  max-width: 350px;
+  width: 100%;
+  height: 160px;
+}
+
+/* Clearfix */
+.cf:before,
+.cf:after {
+   content: " "; /* 1 */
+   display: table; /* 2 */
+}
+
+.cf:after {
+   clear: both;
+}
 
 /*footer*/
 .footer-bg {
@@ -528,26 +581,18 @@ input[type=text], input[type=password] {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.soc-contact-fb {
-    background-color: #3B5998; 
-}
-.soc-contact-twitter {
-    background-color: #55ACEE;
-    margin:0 15px;
-}
-.soc-contact-google {
-    background-color: #DC4E41;
-    
-}
-.soc-contact-tiktok {
-  background-color: black;
-  margin:0 15px;
+    background-color: rgb(41, 41, 41);
 }
 
+.soc-contact-twitter {
+    margin:0 15px;
+}
 .footer-span {
     font-family: 'Poppins';
     font-size: 14px;
     margin-top: 54px;
     margin-left: 139px;
+}
+.active-page {
+  color: gray;
 }
