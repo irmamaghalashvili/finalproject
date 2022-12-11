@@ -634,3 +634,49 @@ hr {
 .active-page {
   color: gray;
 }
+.friends {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.div-xml {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.div-xml ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.li-xml {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.li-xml img {
+  margin-top: 15px;
+  border-radius: 50px;
+}
+.btn {
+  width: 70px;
+  background-color: #34b7a7;
+  border: 0;
+  margin: 10px;
+}
+.icon {
+  color: gray;
+  size: 50px;
+}
