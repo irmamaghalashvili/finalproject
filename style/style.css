@@ -1,4 +1,7 @@
-h2, h3, h4 h5, h6 {
+h2,
+h3,
+h4 h5,
+h6 {
   text-align: center;
   margin: 0 30px;
   font-size: 20px;
@@ -11,77 +14,77 @@ a {
 .h1 {
   font-size: 30px;
   align-items: center;
-  margin:50px;
+  margin: 50px;
   text-align: center;
 }
 .header {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: #e9e8e6;
-    align-items: center;
-    padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #e9e8e6;
+  align-items: center;
+  padding: 15px;
 }
 .navigations {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
 }
 .nav-a:hover {
-    color: gray;
+  color: gray;
 }
 .navigations ul {
-    display: flex;
+  display: flex;
 }
 .nav-a {
-    padding-left: 20px;
+  padding-left: 20px;
 }
 #input-box {
-    margin: 50px;
+  margin: 50px;
 }
 i {
-    margin: 10px;
+  margin: 10px;
 }
 .burger-bar {
-    position: absolute;
-    top: 130px;
-    right: 50%;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #e9e8e6;
-    cursor: pointer;
-    display: none;
+  position: absolute;
+  top: 130px;
+  right: 50%;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #e9e8e6;
+  cursor: pointer;
+  display: none;
 }
 .line {
-    width: 90%;
-    height: 2px;
-    background-color: SlateGray;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    transition: all 0.3s linear;
+  width: 90%;
+  height: 2px;
+  background-color: SlateGray;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s linear;
 }
 .line1 {
-    top: 30%;
+  top: 30%;
 }
 .line3 {
-    top: 70%;
+  top: 70%;
 }
 .activebar .line1 {
-    top: 50%;
-    transform: translate(-50%,-50%) rotate(45deg);
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
 }
 .activebar .line3 {
-    top: 50%;
-    transform: translate(-50%,-50%) rotate(-45deg);
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
 }
 .activebar .line2 {
-    display: none;
+  display: none;
 }
 .ul-flex {
-    display: flex;
-    justify-content: left;
+  display: flex;
+  justify-content: left;
 }
 .about {
   display: flex;
@@ -113,22 +116,23 @@ i {
 }
 /* search */
 label {
-    display: block;
-    font: 1rem 'Fira Sans', sans-serif;
+  display: block;
+  font: 1rem "Fira Sans", sans-serif;
 }
-input, label {
-    margin: .4rem 0;
-    border-color: Gainsboro;
-    border-radius: 10px;
-    height: 40px;
-    width: 100%;
+input,
+label {
+  margin: 0.4rem 0;
+  border-color: Gainsboro;
+  border-radius: 10px;
+  height: 40px;
+  width: 100%;
 }
 .input:focus {
-    outline: none;
-    color: Gainsboro;
+  outline: none;
+  color: Gainsboro;
 }
 .input::placeholder {
-    color: Silver;
+  color: Silver;
 }
 .search-box {
   display: flex;
@@ -139,117 +143,119 @@ input, label {
 }
 /* log in */
 .sign-in-up {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 .sign-in {
-    margin-right: 10px;
+  margin-right: 10px;
 }
-input[type=text], input[type=password] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: none;
-  }
-  span.psw {
-    float: right;
-    padding-top: 16px;
-  }
-  /* Add Zoom Animation */
-  .animate {
-    -webkit-animation: animatezoom 0.6s;
-    animation: animatezoom 0.6s
-  }
-  
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: none;
+}
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+}
 
-  /* Change styles for span and cancel button on extra small screens */
- 
+/* Change styles for span and cancel button on extra small screens */
+
 /* sing up */
-input[type=text], input[type=password] {
-    width: 100%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    display: inline-block;
-    border: none;
-    background: #f1f1f1;
-  }
-  /* Add a background color when the inputs get focus */
-  input[type=text]:focus, input[type=password]:focus {
-    background-color: #ddd;
-    outline: none;
-  }
-  
-  /* Set a style for all buttons */
-  button {
-    color: SlateGray;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 120px;
-    border-radius: 10px;
-    opacity: 0.9;
-  }
-  button:hover {
-    opacity:2;
-  }
-  .cancelbtn {
-    padding: 14px 20px;
-    background-color: #f44336;
-  }
-  .cancelbtn, .signupbtn {
-    float: left;
-    width: 50%;
-  }
-  .container {
-    padding: 16px;
-    background-color: Silver;
-  }
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    padding-top: 50px;
-  }
-  .modal-content {
-    background-color: #fefefe;
-    margin: 5% auto 15% auto;
-    border: 1px solid #888;
-    width: 80%;
-  }
-  hr {
-    border: 1px solid #f1f1f1;
-    margin-bottom: 25px;
-  }
-  .close {
-    position: absolute;
-    right: 35px;
-    top: 15px;
-    font-size: 40px;
-    font-weight: bold;
-    color: #f1f1f1;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #f44336;
-    cursor: pointer;
-  }
-  .clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+/* Add a background color when the inputs get focus */
+input[type="text"]:focus,
+input[type="password"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
 
- 
+/* Set a style for all buttons */
+button {
+  color: SlateGray;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 120px;
+  border-radius: 10px;
+  opacity: 0.9;
+}
+button:hover {
+  opacity: 2;
+}
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+.cancelbtn,
+.signupbtn {
+  float: left;
+  width: 50%;
+}
+.container {
+  padding: 16px;
+  background-color: Silver;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  padding-top: 50px;
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  border: 1px solid #888;
+  width: 80%;
+}
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 /* about */
 .about-div {
   display: flex;
@@ -270,7 +276,6 @@ input[type=text], input[type=password] {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-
 }
 .skill-div {
   margin-top: 20px;
@@ -285,7 +290,7 @@ input[type=text], input[type=password] {
   width: 350px;
   background-color: #888;
 }
-.skill-div-HTML  {
+.skill-div-HTML {
   height: 100%;
   width: 80%;
   background-color: #34b7a7;
@@ -322,27 +327,26 @@ input[type=text], input[type=password] {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content:space-around;
+  justify-content: space-around;
 }
 .work img {
   max-width: 250px;
   width: 100%;
   margin: 20px;
-  --s: 15px;  /* size of the frame */
-  --b: 2px;   /* border thickness */
+  --s: 15px; /* size of the frame */
+  --b: 2px; /* border thickness */
   --c: darkgray;
-  
+
   width: var(--w);
   aspect-ratio: 1;
   object-fit: cover;
-  padding: calc(2*var(--s));
-  --_g: var(--c) var(--b),#0000 0 calc(100% - var(--b)),var(--c) 0;
-  background:
-    linear-gradient(      var(--_g)) 50%/100% var(--_i,100%) no-repeat,
-    linear-gradient(90deg,var(--_g)) 50%/var(--_i,100%) 100% no-repeat;
-  outline: calc(var(--w)/2) solid #0009;
-  outline-offset: calc(var(--w)/-2 - 2*var(--s));
-  transition: .4s;
+  padding: calc(2 * var(--s));
+  --_g: var(--c) var(--b), #0000 0 calc(100% - var(--b)), var(--c) 0;
+  background: linear-gradient(var(--_g)) 50%/100% var(--_i, 100%) no-repeat,
+    linear-gradient(90deg, var(--_g)) 50% / var(--_i, 100%) 100% no-repeat;
+  outline: calc(var(--w) / 2) solid #0009;
+  outline-offset: calc(var(--w) / -2 - 2 * var(--s));
+  transition: 0.4s;
   cursor: pointer;
 }
 .work-div {
@@ -364,7 +368,7 @@ input[type=text], input[type=password] {
   flex-wrap: wrap;
   align-content: center;
   align-items: center;
-  justify-content:space-around;
+  justify-content: space-around;
   text-align: center;
   padding: 20px 0;
 }
@@ -412,7 +416,6 @@ input[type=text], input[type=password] {
 .book-div-img img {
   width: 90%;
 }
-
 
 /* Hobbies */
 
@@ -485,26 +488,27 @@ input[type=text], input[type=password] {
   align-items: center;
 }
 .dotParent {
-    display: flex;
-    position: absolute;
-    left:50%;
-    transform: translateX(-50%);
-    bottom: 30px;
+  display: flex;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 30px;
 }
 .dot {
   cursor: pointer;
-    width: 20px;
-    height: 20px;
-    background-color: #34b7a7;
-    border-radius: 50%;
-    margin: 10px;
-    display: inline-block;
-    transition: background-color 0.9s ease;
-  }
- 
-  .active, .dot:hover {
-    background-color: lightgoldenrodyellow;
-  }
+  width: 20px;
+  height: 20px;
+  background-color: #34b7a7;
+  border-radius: 50%;
+  margin: 10px;
+  display: inline-block;
+  transition: background-color 0.9s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: lightgoldenrodyellow;
+}
 
 /* contact */
 .cont {
@@ -532,14 +536,16 @@ input[type=text], input[type=password] {
   margin: 20px auto;
 }
 .half {
- float: left;
- width: 48%;
- margin-bottom: 1em;
+  float: left;
+  width: 48%;
+  margin-bottom: 1em;
 }
-.rightt { width: 50%; }
+.rightt {
+  width: 50%;
+}
 
 .left {
-    margin-right: 2%; 
+  margin-right: 2%;
 }
 .textarea {
   max-width: 350px;
@@ -550,48 +556,48 @@ input[type=text], input[type=password] {
 /* Clearfix */
 .cf:before,
 .cf:after {
-   content: " "; /* 1 */
-   display: table; /* 2 */
+  content: " "; /* 1 */
+  display: table; /* 2 */
 }
 
 .cf:after {
-   clear: both;
+  clear: both;
 }
 
 /*footer*/
 .footer-bg {
-    background-color: #e9e8e6;
-    padding: 89px 0 114px 0;
+  background-color: #e9e8e6;
+  padding: 89px 0 114px 0;
 }
 
 .footer-flex {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: center;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
 }
 .footer-social-icons {
-    display: flex;
+  display: flex;
 }
 .size-social {
-    width: 35px;
-    height: 35px;
-    color: #fff;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(41, 41, 41);
+  width: 35px;
+  height: 35px;
+  color:#fefefe;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(41, 41, 41);
 }
 
 .soc-contact-twitter {
-    margin:0 15px;
+  margin: 0 15px;
 }
 .footer-span {
-    font-family: 'Poppins';
-    font-size: 14px;
-    margin-top: 54px;
-    margin-left: 139px;
+  font-family: "Poppins";
+  font-size: 14px;
+  margin-top: 54px;
+  margin-left: 139px;
 }
 .active-page {
   color: gray;

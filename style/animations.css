@@ -1,165 +1,222 @@
 @keyframes textmove {
-    from {transform: translateX(-200px);}
-    to {transform: translateX(0px);}
+  from {
+    transform: translateX(-200px);
+  }
+  to {
+    transform: translateX(0px);
+  }
 }
 .about-box {
-    animation: textmove 2s ease;
+  animation: textmove 2s ease;
 }
 @keyframes photomove {
-    from {transform: translateX(1000px);}
-    to {transform: translateX(0px);}
+  from {
+    transform: translateX(1000px);
+  }
+  to {
+    transform: translateX(0px);
+  }
 }
-.front-image-div{
-    animation: photomove 2s ease;
+.front-image-div {
+  animation: photomove 2s ease;
 }
 @keyframes skillmoveHTML {
-    from {width: 0px;}
-    to {width: 80%;}
+  from {
+    width: 0px;
+  }
+  to {
+    width: 80%;
+  }
 }
 .skill-div-HTML {
-    animation: skillmoveHTML 3s ease;
+  animation: skillmoveHTML 3s ease;
 }
 @keyframes skillmoveCSS {
-    from {width: 0px;}
-    to {width: 70%;}
+  from {
+    width: 0px;
+  }
+  to {
+    width: 70%;
+  }
 }
 .skill-div-CSS {
-    animation: skillmoveCSS 3s ease;
+  animation: skillmoveCSS 3s ease;
 }
 @keyframes skillmoveJAVA {
-    from {width: 0px;}
-    to {width: 10%;}
+  from {
+    width: 0px;
+  }
+  to {
+    width: 10%;
+  }
 }
 .skill-div-JAVA {
-    animation: skillmoveJAVA 3s ease;
+  animation: skillmoveJAVA 3s ease;
 }
 @keyframes skillmovePOTOSHOP {
-    from {width: 0px;}
-    to {width: 20%;}
+  from {
+    width: 0px;
+  }
+  to {
+    width: 20%;
+  }
 }
 .skill-div-PHOTOSHOP {
-    animation: skillmovePOTOSHOP 3s ease;
+  animation: skillmovePOTOSHOP 3s ease;
 }
 .cover-leter-animation {
-    transform: scale(0.94);
-    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+  transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+@keyframes scale {
+  100% {
+    transform: scale(1);
   }
-  @keyframes scale {
-    100% {
-      transform: scale(1);
-    }
-  }
+}
 .cover-leter-animation span {
-    display: inline-block;
-    opacity: 0;
-    filter: blur(4px);
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
 }
 .cover-leter-animation span:nth-child(1) {
-    animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.cover-leter-animation span:nth-child(2) {
+  animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.cover-leter-animation span:nth-child(3) {
+  animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.cover-leter-animation span:nth-child(4) {
+  animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.cover-leter-animation span:nth-child(5) {
+  animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.cover-leter-animation span:nth-child(6) {
+  animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.cover-leter-animation span:nth-child(7) {
+  animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.cover-leter-animation span:nth-child(8) {
+  animation: fade-in 0.8s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.cover-leter-animation span:nth-child(9) {
+  animation: fade-in 0.8s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.cover-leter-animation span:nth-child(10) {
+  animation: fade-in 0.8s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
   }
-  
-  .cover-leter-animation span:nth-child(2) {
-    animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+.work-water-div {
+  animation: workmove 1s ease;
+}
+@keyframes workmove {
+  from {
+    transform: translatex(-500px);
   }
-  
-  .cover-leter-animation span:nth-child(3) {
-    animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  to {
+    transform: translatex(0px);
   }
-  
-  .cover-leter-animation span:nth-child(4) {
-    animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+.work-credo {
+  animation: workcredomove 1s ease;
+}
+@keyframes workcredomove {
+  from {
+    transform: translatex(800px);
   }
-  
-  .cover-leter-animation span:nth-child(5) {
-    animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  to {
+    transform: translatex(0px);
   }
-  
-  .cover-leter-animation span:nth-child(6) {
-    animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+.work img:hover {
+  outline: var(--b) solid var(--c);
+  outline-offset: calc(var(--s) / -2);
+  --_i: calc(100% - 2 * var(--s));
+}
+.left-move {
+  animation: bookmove 2s ease;
+}
+@keyframes bookmove {
+  from {
+    transform: translateX(-400px);
   }
-  
-  .cover-leter-animation span:nth-child(7) {
-    animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  to {
+    transform: translateX(0px);
   }
-  
-  .cover-leter-animation span:nth-child(8) {
-    animation: fade-in 0.8s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
-  }
-  
-  .cover-leter-animation span:nth-child(9) {
-    animation: fade-in 0.8s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
-  }
-  
-  .cover-leter-animation span:nth-child(10) {
-    animation: fade-in 0.8s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
-  }
-  @keyframes fade-in {
-    100% {
-      opacity: 1;
-      filter: blur(0);
-    }
-  }
-  .work-water-div {
-    animation: workmove 1s ease;
-  }
-  @keyframes workmove {
-    from {transform: translatex(-500px);}
-    to {transform: translatex(0px);}
-  }
-  .work-credo {
-    animation: workcredomove 1s ease;
-  }
-  @keyframes workcredomove {
-    from {transform: translatex(800px);}
-    to {transform: translatex(0px);}
-  }
-  .work img:hover {
-    outline: var(--b) solid var(--c);
-    outline-offset: calc(var(--s)/-2);
-    --_i: calc(100% - 2*var(--s));
-  }
-  .left-move {
-    animation: bookmove 2s ease;
-  }
-  @keyframes bookmove {
-    from {transform: translateX(-400px);}
-    to {transform: translateX(0px);}
-  }
-  .right-move {
-    animation: bookmoveright 2s ease;
+}
+.right-move {
+  animation: bookmoveright 2s ease;
 }
 @keyframes bookmoveright {
-    from {transform: translateX(400px);}
-    to {transform: translateX(0px);}
+  from {
+    transform: translateX(400px);
+  }
+  to {
+    transform: translateX(0px);
+  }
 }
 .book-div-h4 {
-   animation: booktextMove 2s ease;
+  animation: booktextMove 2s ease;
 }
 .book-div-p {
-    animation: booktextMove 2.5s ease;
+  animation: booktextMove 2.5s ease;
 }
 @keyframes booktextMove {
-    from {transform: translateY(600px);}
-    to {transform: translateY(0px);}
+  from {
+    transform: translateY(600px);
+  }
+  to {
+    transform: translateY(0px);
+  }
 }
-.read-gif { 
-    animation: floating 3s infinite ease-in-out;
-    margin-left: 30px;
-    margin-top: 5px; 
+.read-gif {
+  animation: floating 3s infinite ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
 }
- 
+
 @keyframes floating {
-    0% { transform: translate(0,  0px); }
-    50%  { transform: translate(0, 15px); }
-    100%   { transform: translate(0, -0px); }   
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
 }
 @-webkit-keyframes animatezoom {
-    from {-webkit-transform: scale(0)} 
-    to {-webkit-transform: scale(1)}
+  from {
+    -webkit-transform: scale(0);
   }
-    
-  @keyframes animatezoom {
-    from {transform: scale(0)} 
-    to {transform: scale(1)}
+  to {
+    -webkit-transform: scale(1);
   }
-  
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
