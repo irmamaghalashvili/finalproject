@@ -269,6 +269,13 @@ hr {
   max-width: 150px;
   width: 100%;
 }
+.about-div-ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-around;
+}
 .front-div img {
   width: 100%;
 }
@@ -544,13 +551,24 @@ hr {
 
 /* contact */
 .cont {
-  background-color: #a8a8a8;
   padding: 40px 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
+}
+.mobile i {
+  color: #34b7a7;
+}
+.email i {
+  color: #34b7a7;
+}
+.adress i {
+  color: #34b7a7;
+}
+.mobile:hover , .email:hover , .adress:hover {
+  font-weight: 900;
 }
 .map {
   max-width: 600px;
@@ -614,15 +632,18 @@ hr {
 .size-social {
   width: 35px;
   height: 35px;
-  color: #fefefe;
+  color: #34b7a7;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(41, 41, 41);
+  background-color: #effbf9;
 }
 
 .soc-contact-twitter {
+  margin: 0 15px;
+}
+.soc-contact-instagram {
   margin: 0 15px;
 }
 .footer-span {
