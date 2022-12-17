@@ -1,3 +1,4 @@
+"use strict";
 let currentPage = 1;
 let totalPages;
 
@@ -53,3 +54,5 @@ document.getElementById("next-btn-id").addEventListener("click", function () {
   getUsers(currentPage);
 });
 getUsers(currentPage);
+
+

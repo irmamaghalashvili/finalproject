@@ -1,3 +1,4 @@
+"use strict";
 // burger bur
 let navigations = document.getElementById('nav-bar');
 let burgerbar = document.getElementById('burger');
@@ -143,5 +144,3 @@ setInterval(() => {
 }, 5000);
 
 slider();
-
-

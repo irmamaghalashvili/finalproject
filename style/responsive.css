@@ -24,6 +24,15 @@
     float: none;
     margin-bottom: 0;
   }
+  .skill-div {
+    width: 250px;
+  }
+  .skill-div-line {
+    width: 250px;
+  }
+  .about-div-ul {
+    font-size: 10px;
+  }
 }
 @media screen and (max-width: 300px) {
   span.psw {
