@@ -7,25 +7,6 @@ burgerbar.addEventListener('click', function() {
     navigations.classList.toggle('activeNav')
     burgerbar.classList.toggle('activebar')
 });
-// sign in
-var modal = document.getElementById('id01');
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-// sign up
-var modal = document.getElementById('id02');
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-
 
 // coock slider
 let data = [
