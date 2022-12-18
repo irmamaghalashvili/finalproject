@@ -1,24 +1,65 @@
-@keyframes textmove {
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@-webkit-keyframes textmove {
   from {
+    -webkit-transform: translateX(-200px);
     transform: translateX(-200px);
   }
   to {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+}
+@keyframes textmove {
+  from {
+    -webkit-transform: translateX(-200px);
+    transform: translateX(-200px);
+  }
+  to {
+    -webkit-transform: translateX(0px);
     transform: translateX(0px);
   }
 }
 .about-box {
+  -webkit-animation: textmove 2s ease;
   animation: textmove 2s ease;
 }
-@keyframes photomove {
+@-webkit-keyframes photomove {
   from {
+    -webkit-transform: translateX(1000px);
     transform: translateX(1000px);
   }
   to {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+}
+@keyframes photomove {
+  from {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+  }
+  to {
+    -webkit-transform: translateX(0px);
     transform: translateX(0px);
   }
 }
 .front-image-div {
+  -webkit-animation: photomove 2s ease;
   animation: photomove 2s ease;
+}
+@-webkit-keyframes skillmoveHTML {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 80%;
+  }
 }
 @keyframes skillmoveHTML {
   from {
@@ -29,7 +70,16 @@
   }
 }
 .skill-div-HTML {
+  -webkit-animation: skillmoveHTML 3s ease;
   animation: skillmoveHTML 3s ease;
+}
+@-webkit-keyframes skillmoveCSS {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 70%;
+  }
 }
 @keyframes skillmoveCSS {
   from {
@@ -40,7 +90,16 @@
   }
 }
 .skill-div-CSS {
+  -webkit-animation: skillmoveCSS 3s ease;
   animation: skillmoveCSS 3s ease;
+}
+@-webkit-keyframes skillmoveJAVA {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 10%;
+  }
 }
 @keyframes skillmoveJAVA {
   from {
@@ -51,7 +110,16 @@
   }
 }
 .skill-div-JAVA {
+  -webkit-animation: skillmoveJAVA 3s ease;
   animation: skillmoveJAVA 3s ease;
+}
+@-webkit-keyframes skillmovePOTOSHOP {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 20%;
+  }
 }
 @keyframes skillmovePOTOSHOP {
   from {
@@ -62,51 +130,99 @@
   }
 }
 .skill-div-PHOTOSHOP {
+  -webkit-animation: skillmovePOTOSHOP 3s ease;
   animation: skillmovePOTOSHOP 3s ease;
 }
 .cover-leter-animation {
+  -webkit-transform: scale(0.94);
+  -ms-transform: scale(0.94);
   transform: scale(0.94);
+  -webkit-animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
   animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+@-webkit-keyframes scale {
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
 }
 @keyframes scale {
   100% {
+    -webkit-transform: scale(1);
     transform: scale(1);
   }
 }
 .cover-leter-animation span {
   display: inline-block;
   opacity: 0;
+  -webkit-filter: blur(4px);
   filter: blur(4px);
 }
 .cover-leter-animation span {
+  -webkit-animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
   animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+@-webkit-keyframes fade-in {
+  100% {
+    opacity: 1;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+  }
 }
 
 @keyframes fade-in {
   100% {
     opacity: 1;
+    -webkit-filter: blur(0);
     filter: blur(0);
   }
 }
 .work-water-div {
+  -webkit-animation: workmove 1s ease;
   animation: workmove 1s ease;
 }
-@keyframes workmove {
+@-webkit-keyframes workmove {
   from {
+    -webkit-transform: translatex(-500px);
     transform: translatex(-500px);
   }
   to {
+    -webkit-transform: translatex(0px);
+    transform: translatex(0px);
+  }
+}
+@keyframes workmove {
+  from {
+    -webkit-transform: translatex(-500px);
+    transform: translatex(-500px);
+  }
+  to {
+    -webkit-transform: translatex(0px);
     transform: translatex(0px);
   }
 }
 .work-credo {
+  -webkit-animation: workcredomove 1s ease;
   animation: workcredomove 1s ease;
 }
-@keyframes workcredomove {
+@-webkit-keyframes workcredomove {
   from {
+    -webkit-transform: translatex(800px);
     transform: translatex(800px);
   }
   to {
+    -webkit-transform: translatex(0px);
+    transform: translatex(0px);
+  }
+}
+@keyframes workcredomove {
+  from {
+    -webkit-transform: translatex(800px);
+    transform: translatex(800px);
+  }
+  to {
+    -webkit-transform: translatex(0px);
     transform: translatex(0px);
   }
 }
@@ -116,55 +232,114 @@
   --_i: calc(100% - 2 * var(--s));
 }
 .left-move {
+  -webkit-animation: bookmove 2s ease;
   animation: bookmove 2s ease;
 }
-@keyframes bookmove {
+@-webkit-keyframes bookmove {
   from {
+    -webkit-transform: translateX(-400px);
     transform: translateX(-400px);
   }
   to {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+}
+@keyframes bookmove {
+  from {
+    -webkit-transform: translateX(-400px);
+    transform: translateX(-400px);
+  }
+  to {
+    -webkit-transform: translateX(0px);
     transform: translateX(0px);
   }
 }
 .right-move {
+  -webkit-animation: bookmoveright 2s ease;
   animation: bookmoveright 2s ease;
 }
-@keyframes bookmoveright {
+@-webkit-keyframes bookmoveright {
   from {
+    -webkit-transform: translateX(400px);
     transform: translateX(400px);
   }
   to {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+}
+@keyframes bookmoveright {
+  from {
+    -webkit-transform: translateX(400px);
+    transform: translateX(400px);
+  }
+  to {
+    -webkit-transform: translateX(0px);
     transform: translateX(0px);
   }
 }
 .book-div-h4 {
+  -webkit-animation: booktextMove 2s ease;
   animation: booktextMove 2s ease;
 }
 .book-div-p {
+  -webkit-animation: booktextMove 2.5s ease;
   animation: booktextMove 2.5s ease;
 }
-@keyframes booktextMove {
+@-webkit-keyframes booktextMove {
   from {
+    -webkit-transform: translateY(600px);
     transform: translateY(600px);
   }
   to {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+}
+@keyframes booktextMove {
+  from {
+    -webkit-transform: translateY(600px);
+    transform: translateY(600px);
+  }
+  to {
+    -webkit-transform: translateY(0px);
     transform: translateY(0px);
   }
 }
 .read-gif {
+  -webkit-animation: floating 3s infinite ease-in-out;
   animation: floating 3s infinite ease-in-out;
   margin-left: 30px;
   margin-top: 5px;
 }
 
-@keyframes floating {
+@-webkit-keyframes floating {
   0% {
+    -webkit-transform: translate(0, 0px);
     transform: translate(0, 0px);
   }
   50% {
+    -webkit-transform: translate(0, 15px);
     transform: translate(0, 15px);
   }
   100% {
+    -webkit-transform: translate(0, -0px);
+    transform: translate(0, -0px);
+  }
+}
+
+@keyframes floating {
+  0% {
+    -webkit-transform: translate(0, 0px);
+    transform: translate(0, 0px);
+  }
+  50% {
+    -webkit-transform: translate(0, 15px);
+    transform: translate(0, 15px);
+  }
+  100% {
+    -webkit-transform: translate(0, -0px);
     transform: translate(0, -0px);
   }
 }
@@ -179,9 +354,11 @@
 
 @keyframes animatezoom {
   from {
+    -webkit-transform: scale(0);
     transform: scale(0);
   }
   to {
+    -webkit-transform: scale(1);
     transform: scale(1);
   }
 }
